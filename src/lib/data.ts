@@ -30,7 +30,8 @@ export async function getEmployees({
   return db
     .select()
     .from(employees)
-    .where(conditions.length > 0 ? and(...conditions) : undefined);
+    .where(conditions.length > 0 ? and(...conditions) : undefined)
+    .orderBy(employees.id);
 }
 
 export async function getStats() {
