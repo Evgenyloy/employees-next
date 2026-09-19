@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "drizzle-orm": "^0.45.2",
@@ -15,8 +19,16 @@
     "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "babel-plugin-react-compiler": "1.0.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^17.4.2",
     "drizzle-kit": "^0.31.10",
-    "sass": "^1.104.1"
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "sass": "^1.104.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
