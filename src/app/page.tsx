@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import AppFilter from "@/components/app-filter/app-filter";
 import AppInfo from "@/components/app-info/app-info";
 import EmployeesAddForm from "@/components/employees-add-form/employees-add-form";
@@ -20,10 +21,16 @@ export default async function Home({
   return (
     <div className="app">
       <AppInfo />
-      <div className="search-panel d-flex align-items-center">
-        <SearchPanel query={query} />
-        <AppFilter filter={safeFilter} />
+
+      <div className="d-flex align-items-center gap-3 mt-4">
+        <Suspense fallback={null}>
+          <SearchPanel query={query} />
+        </Suspense>
+        <Suspense fallback={null}>
+          <AppFilter filter={safeFilter} />
+        </Suspense>
       </div>
+
       <EmployeesList employees={employees} />
       <EmployeesAddForm />
     </div>

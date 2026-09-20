@@ -1,0 +1,80 @@
+.item {
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--color-primary);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  span {
+    line-height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    min-width: 550px;
+  }
+
+  input {
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    background: transparent;
+    color: inherit;
+  }
+
+  button {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+  }
+}
+
+.btnCookie {
+  color: var(--color-accent) !important;
+}
+
+.btnTrash {
+  color: var(--color-danger) !important;
+}
+
+.star {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  color: #ffd700;
+  transition: 0.3s all;
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.bonus .star {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.rise {
+  span,
+  input {
+    color: var(--color-accent);
+  }
+}
+
+.nameButton {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  min-width: 550px;
+  line-height: 35px;
+  font-size: 20px;
+}

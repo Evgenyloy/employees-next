@@ -1,0 +1,25 @@
+.wrapper {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: var(--color-text);
+
+  h3 {
+    margin-top: 0;
+  }
+
+  form {
+    margin-top: 20px;
+
+    input {
+      max-width: 350px;
+    }
+  }
+}
+
+.error {
+  margin-top: 12px;
+  color: #ffb3b3;
+}
