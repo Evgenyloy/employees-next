@@ -34,7 +34,7 @@ export default function SearchPanel({ query }: { query: string }) {
   return (
     <input
       type="text"
-      className={`form-control ${styles.input}`}
+      className={styles.searchPanel}
       placeholder="Найти сотрудника"
       value={value}
       onChange={(e) => setValue(e.target.value)}

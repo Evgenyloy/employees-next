@@ -2,6 +2,8 @@
   padding: 15px 20px;
   border-bottom: 1px solid var(--color-primary);
 
+  display: flex;
+
   &:last-child {
     border-bottom: none;
   }
@@ -77,4 +79,9 @@
   min-width: 550px;
   line-height: 35px;
   font-size: 20px;
+}
+
+.buttons-group {
+  display: flex;
+  flex-direction: row !important;
 }
