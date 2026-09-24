@@ -29,7 +29,7 @@ export default function EmployeesListItem({
         defaultValue={employee.salary}
       />
 
-      <div className="buttons-group d-flex justify-content-center align-items-center">
+      <div className={styles.buttonsGroup}>
         <form action={toggleIncrease.bind(null, employee.id)}>
           <button
             type="submit"

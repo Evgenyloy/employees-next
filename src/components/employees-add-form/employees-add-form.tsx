@@ -10,18 +10,18 @@ export default function EmployeesAddForm() {
   return (
     <div className={styles.wrapper}>
       <h3>Добавьте нового сотрудника</h3>
-      <form action={formAction} className="d-flex gap-2">
+      <form action={formAction} className={styles.formGroup}>
         <input
           type="text"
           name="name"
-          className="form-control"
+          className={styles.formControl}
           placeholder="Как его зовут?"
           required
         />
         <input
           type="number"
           name="salary"
-          className="form-control"
+          className={styles.formControl}
           placeholder="З/П в $?"
           required
         />

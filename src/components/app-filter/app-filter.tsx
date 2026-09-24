@@ -31,8 +31,8 @@ export default function AppFilter({ filter }: { filter: Filter }) {
             key={key}
             href={buildHref(key)}
             className={clsx(
-              "btn",
-              isActive ? "btn-light" : "btn-outline-light",
+              styles.btn,
+              isActive ? styles.btnActive : styles.btnLight,
             )}
           >
             {label}

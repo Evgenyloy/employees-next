@@ -5,6 +5,7 @@ import EmployeesAddForm from "@/components/employees-add-form/employees-add-form
 import EmployeesList from "@/components/employees-list/employees-list";
 import SearchPanel from "@/components/search-panel/search-panel";
 import { getEmployees, type Filter } from "@/lib/data";
+import styles from "./global.scss";
 
 export default async function Home({
   searchParams,

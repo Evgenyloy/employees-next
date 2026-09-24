@@ -3,3 +3,16 @@
   display: flex;
   gap: 8px;
 }
+
+.btnActive {
+  color: rgb(202, 79, 22);
+}
+.btnLight {
+  color: #334a66;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
